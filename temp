@@ -1,0 +1,16 @@
+    public function login($email, $password){
+        $password = md5($password);
+        $sql = "SELECT * FROM users WHERE $email AND $password LIMIT 1";
+        $statement = $this->db->pdo->prepare($sql);
+        var_dump($statement);
+//        $statement->bindParam(':email', $email);
+//        $statement->bindParam(':password', md5($password));
+        $statement->execute();
+        $user = $statement->fetch(PDO::FETCH_ASSOC);
+
+        if($user){
+            $_SESSION['user'] = $user;
+            return true;
+        }
+        return false;
+    }
