@@ -45,7 +45,7 @@ class QueryBuilder{
 
         $statement->execute($data); //виконали запит
 
-//        header("Location: /phpLearn"); exit(); //переадресація на головну
+//        header("Location: /rbTodo"); exit(); //переадресація на головну
     }
 
     function update($table, $data){

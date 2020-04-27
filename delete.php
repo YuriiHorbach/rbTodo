@@ -10,5 +10,5 @@ $id = $_GET['id'];
 
 $db->delete('tasks', $id);
 
-header("Location: /phpLearn/");
+header("Location: /rbtodo/");
 ?>
