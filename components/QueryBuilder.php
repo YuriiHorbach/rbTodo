@@ -7,7 +7,9 @@ class QueryBuilder{
     //конструктор
     function  __construct(){
         //підключення до БД
-        $this->pdo = new PDO("mysql:host=localhost; dbname=test1", "root","" );
+        //підключення до БД
+//        $this->pdo = new PDO("mysql:host=localhost; dbname=test1", "root","" );
+        $this->pdo = new PDO("mysql:host=db4free.net; dbname=rbtodo_2020", "root_20202704","mydb_1234" );
     }
 
 
