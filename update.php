@@ -14,5 +14,5 @@ $data =[
 
 $db->update("tasks", $data);
 //
-header("Location: /rbtodo/"); exit;
+header("Location: /"); exit;
 ?>

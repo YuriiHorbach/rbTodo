@@ -11,7 +11,7 @@ $data = [
 //$db ->addTask($data);
 $db ->store("tasks", $data);
 
-header("Location: /rbtodo/"); exit;
+header("Location: /"); exit;
 
 ?>
 

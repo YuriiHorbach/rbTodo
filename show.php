@@ -29,7 +29,7 @@ $task = $db->getOne("tasks", $id);
                 <h1><?=$task['title']?></h1>
                 <p><?=$task['content']?></p>
 
-                <a href="/rbtodo/">Go back</a>
+                <a href="/">Go back</a>
 
             </div>
         </div>
